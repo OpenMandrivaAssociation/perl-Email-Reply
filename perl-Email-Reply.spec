@@ -21,7 +21,6 @@ BuildRequires:  perl(Email::MIME)
 BuildRequires:  perl(Email::MIME::Creator)
 BuildRequires:  perl(Email::Date)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This software takes the hard out of generating replies to email messages.
