@@ -2,7 +2,7 @@
 %define name        perl-%{module}
 %define version     1.20.2
 %define up_version  1.202
-%define release     %mkrel 3
+%define release     %mkrel 4
 
 Name:           %{name}
 Version:        %{version}
@@ -21,7 +21,7 @@ BuildRequires:  perl(Email::MIME)
 BuildRequires:  perl(Email::MIME::Creator)
 BuildRequires:  perl(Email::Date)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This software takes the hard out of generating replies to email messages.
