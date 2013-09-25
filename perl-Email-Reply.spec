@@ -1,17 +1,18 @@
 %define upstream_name    Email-Reply
-%define upstream_version 1.202
+%define upstream_version 1.203
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Reply to a Message
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Email/Email-Reply-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Capture::Tiny)
 BuildRequires:	perl(Email::Simple::Creator)
 BuildRequires:	perl(Email::Abstract)
 BuildRequires:	perl(Email::MIME)
@@ -76,4 +77,5 @@ make test
 
 * Sun Jan 21 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.20.0-1mdv2007.1
 - first mdv release
+
 
