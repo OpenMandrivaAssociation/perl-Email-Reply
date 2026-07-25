@@ -1,15 +1,15 @@
 %define upstream_name    Email-Reply
-%define upstream_version 1.203
+%define upstream_version 1.204
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Reply to a Message
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Email/Email-Reply-%{upstream_version}.tar.gz
+Url:		https://github.com/Perl-Email-Project/Email-Reply
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-Reply-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
