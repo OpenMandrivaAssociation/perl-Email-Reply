@@ -1,15 +1,13 @@
 %define upstream_name    Email-Reply
-%define upstream_version 1.204
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.204
+Release:	2
 
 Summary:	Reply to a Message
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/Perl-Email-Project/Email-Reply
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-Reply-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-Reply-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ BuildArch:	noarch
 This software takes the hard out of generating replies to email messages.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,9 +44,7 @@ make test
 %changelog
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.202.0-1mdv2010.0
 + Revision: 403158
-- rebuild using %%perl_convert_version
-
-* Wed Oct 01 2008 Oden Eriksson <oeriksson@mandriva.com> 1.20.2-4mdv2009.0
+- rebuild using %1.204 Wed Oct 01 2008 Oden Eriksson <oeriksson@mandriva.com> 1.20.2-4mdv2009.0
 + Revision: 290409
 - rebuild
 
